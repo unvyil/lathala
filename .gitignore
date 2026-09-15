@@ -1,0 +1,11 @@
+.env
+.env*
+*.env
+frontend/.env*
+backend//env*
+backend/.env*
+node_modules/
+dist/
+venv/
+__pycache__/
+.vscode/
