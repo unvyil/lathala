@@ -5,7 +5,10 @@ export type ElementType =
   | "spacer"
   | "rectangle"
   | "circle"
-  | "link_zone";
+  | "link_zone"
+  | "polygon"
+  | "star"
+  | "line";
 
 export interface CanvasElement {
   id: string;

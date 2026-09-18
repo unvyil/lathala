@@ -13,7 +13,7 @@ export function DesignCanvas({
 }: DesignCanvasProps) {
   return (
     <div
-      className="flex-1 bg-[#181818] overflow-auto flex flex-col items-center p-8 relative select-none"
+      className="flex-1 bg-[#E5E4E2] overflow-auto flex flex-col items-center p-8 relative select-none"
       onClick={() => onSelect(null)}
     >
       <div className="w-[600px] mb-3 flex items-center justify-between text-xs text-slate-400">
@@ -31,7 +31,7 @@ export function DesignCanvas({
       </div>
 
       <div
-        className="w-[600px] h-[800px] bg-white rounded shadow-2xl relative overflow-hidden text-slate-900 cursor-default"
+        className="w-[600px] h-[800px] bg-[#D9D9D9] shadow-2xl relative overflow-hidden border-[3px] border-[#0062FF] text-slate-900 cursor-default"
         onClick={(e) => e.stopPropagation()}
       >
         {elements.length === 0 ? (
@@ -69,11 +69,11 @@ export function DesignCanvas({
                 }}
                 className={`transition-shadow ${
                   isSelected
-                    ? "ring-2 ring-[#0d99ff] ring-offset-1"
+                    ? "ring-[3px] ring-[#0062FF] ring-offset-1"
                     : "hover:ring-1 hover:ring-slate-300"
                 } ${el.type === "circle" ? "rounded-full" : "rounded-none"} ${
                   el.type === "link_zone"
-                    ? "border-2 border-dashed border-[#0d99ff] bg-[#0d99ff]/10 flex items-center justify-center text-[10px] text-[#0d99ff] font-mono break-all px-1 text-center"
+                    ? "border-2 border-dashed border-[#0062FF] bg-[#0062FF]/10 flex items-center justify-center text-[10px] text-[#0062FF] font-mono break-all px-1 text-center"
                     : ""
                 }`}
               >

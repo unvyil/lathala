@@ -83,7 +83,7 @@ export function AudienceTable({
           <button
             onClick={onSendAll}
             disabled={isProcessing}
-            className="flex items-center gap-2 px-5 py-2 bg-[#0d99ff] hover:bg-[#0b84db] disabled:opacity-50 text-white rounded-xl text-xs font-semibold shadow-sm"
+            className="flex items-center gap-2 px-5 py-2 bg-[#0A0A0A] hover:bg-[#0b84db] disabled:opacity-50 text-white rounded-xl text-xs font-semibold shadow-sm"
           >
             <Send className="w-4 h-4" />{" "}
             {isProcessing ? "Dispatching..." : "Send to All Unsent"}
@@ -118,7 +118,7 @@ export function AudienceTable({
           </thead>
           <tbody className="divide-y divide-[#383838] text-xs">
             {filtered.map((sub) => (
-              <tr key={sub.id} className="hover:bg-[#333]">
+              <tr key={sub.id} className="hover:bg-[#C8C8C8]">
                 <td className="py-3 px-4 font-medium text-white">
                   {editingSubId === sub.id ? (
                     <input
