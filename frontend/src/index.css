@@ -1,1 +1,49 @@
+/* frontend/src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-onyx: #070d0d;
+  --color-espresso: #302e2f;
+  --color-sand: #dbd6d0;
+  --color-parchment: #f1eee9;
+  --color-base: #f2f2f2;
+
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+
+  --shadow-artboard:
+    0 32px 80px -24px rgba(7, 13, 13, 0.35),
+    0 8px 24px -12px rgba(7, 13, 13, 0.2);
+  --shadow-panel:
+    0 1px 2px rgba(7, 13, 13, 0.06), 0 8px 20px -16px rgba(7, 13, 13, 0.25);
+
+  --ease-studio: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-base);
+  color: var(--color-onyx);
+}
+
+.lathala-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.lathala-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(219, 214, 208, 0.25);
+  border-radius: 999px;
+}
+
+.lathala-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
