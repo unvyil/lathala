@@ -1,0 +1,6 @@
+{
+  "name": "Lathala — Open-Source Newsletter Design Studio & Spreadsheet CRM",
+  "description": "Refactored open-source design tool for editorial newsletters with an integrated spreadsheet CRM, Google Sheets/Apps Script sync, variable personalization, and modular self-hosting architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
